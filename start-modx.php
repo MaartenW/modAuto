@@ -17,7 +17,44 @@ $fnm = 'latest.zip';
 $dl_url = 'http://www.modx.com/download/latest';
 	
 
+if (!extension_loaded('flib')) {
+    if (!dl('flib.so')) {
 
+?><html>
+	<head>
+		<style type="text/css">
+			body{
+				font-family: sans-serif;
+				font-weight: normal;
+				font-size: 24px;
+			}
+			div{
+				display: inline-block;
+				width: auto;
+				border: none;
+				background-color: #936;
+				color: #fff;
+				padding: 20px;
+				font-size: 32px;
+				font-weight: bold;
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<br><br><br>
+		<center>
+		<div>Sorry, there's a function not enabled on your webhosting of choice (ZLib)<br>
+			<small>That means you will have to set up MODX the hard way: <a href="http://rtfm.modx.com/revolution/2.x/getting-started/installation"></a></small>
+		</div>
+		</center>
+	</body>
+</html>
+<?php
+	
+	die();
+    }
+}
 
 if(!isset($_GET['cmd'])||$_GET['cmd']!='dlex'){
 
