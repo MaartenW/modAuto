@@ -4,4 +4,6 @@
 ### Getting started ###
 To download and start installing **MODX Revolution**, just [download the files](https://github.com/MaartenW/modAuto/archive/master.zip) to your computer, unzip and upload `start-modx.php` to your webhost.
 
-Now visit [http://&lt;www.your-website-address.com&gt;/start-modx.php]()
+After uploading, you visit
+*http://www.your-website-address.com/start-modx.php*
+and off you go!
